@@ -91,9 +91,11 @@ irb(main):003:0> ap User.all
 => nil
 ```
 
+> Caution! `ap` doens't return the value it prints, so don't try to save it as a variable.  For example, `users = ap User.all` will make `users` `nil`!
+
 ### Use it in any Ruby file (including Rails)!
 
-You can use awesome_print in files, too.
+You can use `awesome_print` in files, too.
 
 ```ruby
 # ap_demo.rb
