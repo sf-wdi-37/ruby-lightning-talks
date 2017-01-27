@@ -1,65 +1,113 @@
-# HTTP Party
+# `awesome_print`
 
-The power of api requests made easy with HTTP Party!
+Make Ruby output AWESOME with [`awesome_print`](https://github.com/awesome-print/awesome_print)!
 
-## Whats So Great About HTTP Party
+## Whats So Great About `awesome_print`?
 
-<li> Setting all the headers!
-<li> Making life easy with apis!
-<li> JSON on JSON on JSON!
+<li> Customized indentation of Ruby output!
+<li> Custom colors of one output!
+<li> And you can set it up for Rails!
 
-## Why use HTTP Party
+## Why use `awesome_print`?
 
-From Treehouse: *"When you’re developing with Ruby, it’s pretty inevitable that at some point you come across an HTTP API that doesn’t have a gem available. While writing Hopefully Sunny I ran into just that situation with World Weather Online’s weather API. It’s often really tempting to go searching for a different API to use instead, but it’s actually not so hard to just write your own wrapper library. Let’s take a look at one of my favorite libraries for working with HTTP APIs, HTTParty, and in the process we’ll figure out how to write our own simple API wrapper libraries."*
+Basic Ruby output isn't always readable. Arrays with hashes inside end up looking like a huge jumble of text. `awesome_print` can help!
 
 ## Demo the awesomeness of this gem!
 
-<li> httparty "https://api.stackexchange.com/2.2/questions?site=stackoverflow"
-<li> httparty "http://food2fork.com/api/search?key=ac89596132bf565718f0859218dadf7f&q=shredded%20cheese"
 
-## Examples
+### Ruby Demo
 
-Need to send authorization tokes and ids?!
+First, make sure you have `awesome_print` installed for your computer. 
 
-```Ruby
-auth = {
-  user_id: "dt_SAMPLETOKENd88ffc342dde5c195df4019f90d6ed",
-  token: "super_s3cr3t_h@$hed_t0k3n_h3Re"
-}
-options = { basic_auth: auth }
-
-result = HTTParty.get("https://api.stackexchange.com/2.2/questions?site=stackoverflow", options)
+```bash 
+gem install awesomeprint
 ```
 
-**Or**
 
-```Ruby
-  key = "ac89596132bf565718f0859218dadf7f"
+Get printing; get awesome! Check it out in `pry`:
 
-  HTTParty.get("http://food2fork.com/api/search?key=" + key + "&q=shredded%20cheese")
+
+```ruby
+> require "awesome_print"
+> zed = { name: "Zed", age: 37, lunch: "salad" }
+> print zed
+# {:name=>"Zed", :age=>37, :lunch=>"salad"}=> nil
+> ap zed
+# {
+#             :name => "Zed",
+#              :age => 37,
+#            :lunch => "salad"
+# }
+=> nil
 ```
 
-**Finally the official setup in RoR**
+### Ruby on Rails Demo 
 
-```Ruby
-require 'httparty'
+Add to your Gemfile:
 
-class Twitter
-  include HTTParty
-  base_uri 'twitter.com'
-  basic_auth 'username', 'password'
+```
+group :development do
+  # Pretty printing for console
+  gem 'awesome_print'
 end
-
-puts Twitter.post('/statuses/update.json', :query => {:status => "It's an HTTParty and everyone is invited!"}).inspect
 ```
 
-## Setup?
+Now you can use it in your `rails console`!
 
-Just do: *gem install httparty*
+**before**
+```ruby
+irb(main):001:0> User.all
+  User Load (0.6ms)  SELECT "users".* FROM "users"
+=> #<ActiveRecord::Relation [#<User id: 1, email: "a@a.a", first_name: "a", last_name: "a", password_digest: "$2a$10$WuYLqapmyHZSblS1/k5qLeEQtslK9bq6vL2JoK1F9RJ...", created_at: "2016-05-17 22:33:11", updated_at: "2016-05-17 22:33:11">, #<User id: 2, email: "a@a.a", first_name: "a", last_name: "a", password_digest: "$2a$10$cqbZyfw9mcRfqPO78tFGieeBtYiXN8LGLyyeZar7M.C...", created_at: "2017-01-27 17:44:06", updated_at: "2017-01-27 17:44:06">]>
+```
 
-If you want to use in a rails app be sure to add the gem to your gemfile.
+**after**
+```ruby
+irb(main):001:0> require 'awesome_print'
+=> false
+
+irb(main):003:0> ap User.all
+  User Load (0.8ms)  SELECT "users".* FROM "users"
+[
+    [0] #<User:0x007fe9c119eb48> {
+                     :id => 1,
+                  :email => "a@a.a",
+             :first_name => "a",
+              :last_name => "a",
+        :password_digest => "$2a$10$WuYLqapmyHZSblS1/k5qLeEQtslK9bq6vL2JoK1F9RJSn49iT/pnC",
+             :created_at => Tue, 17 May 2016 22:33:11 UTC +00:00,
+             :updated_at => Tue, 17 May 2016 22:33:11 UTC +00:00
+    },
+    [1] #<User:0x007fe9c119ea08> {
+                     :id => 2,
+                  :email => "a@a.a",
+             :first_name => "a",
+              :last_name => "a",
+        :password_digest => "$2a$10$cqbZyfw9mcRfqPO78tFGieeBtYiXN8LGLyyeZar7M.COq9HhQN8dm",
+             :created_at => Fri, 27 Jan 2017 17:44:06 UTC +00:00,
+             :updated_at => Fri, 27 Jan 2017 17:44:06 UTC +00:00
+    }
+]
+=> nil
+```
+
+### Use it in any Ruby file (including Rails)!
+
+You can use awesome_print in files, too.
+
+```ruby
+# ap_demo.rb
+require 'awesome_print'
+ap_options = { ruby19_syntax: true, limit: 5, color: {fixnum: :cyan, array: :yellowish}}
+puts "Default awesome_print options:"
+ap (1..20).to_a
+puts "Custom awesome_print options:"
+ap (1..20).to_a, ap_options
+```
+
+If you're doing this in Rails, just remember to make sure `awesome_print` is in your Gemfile.
+
 
 ## Resources
 
-<li> [Github and Docs](https://github.com/jnunemaker/httparty)
-<li> [Treehouse Blog About Setup](http://blog.teamtreehouse.com/its-time-to-httparty)
+<li> [Github and Docs](https://github.com/awesome-print/awesome_print)
