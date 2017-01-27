@@ -27,7 +27,7 @@ Here are a few gems you could research:
 * awesome_print
 * githug
 
-Browse way more gems at  [Ruby Toolbox](https://www.ruby-toolbox.com/) (somewhat outdated) or the newer [rubygems.org](https://rubygems.org/)!
+Browse way more gems at  [Ruby Toolbox](https://www.ruby-toolbox.com/) (outdated) or the newer [rubygems.org](https://rubygems.org/)!
 
 Even more gems are listed [at an "awesome-ruby" repo](https://github.com/markets/awesome-ruby) and [semi-recent tutsplus article](http://code.tutsplus.com/articles/24-extremely-useful-ruby-gems-for-web-development--net-23863).
 
