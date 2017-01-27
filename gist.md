@@ -2,17 +2,17 @@
 
 Make Ruby output AWESOME with [`awesome_print`](https://github.com/awesome-print/awesome_print)!
 
-## Whats So Great About `awesome_print`?
+## What's So Great About `awesome_print`?
 
 <li> Customized indentation of Ruby output!
 <li> Custom colors of one output!
 <li> And you can set it up for Rails!
 
-## Why use `awesome_print`?
+### Why use `awesome_print`?
 
 Basic Ruby output isn't always readable. Arrays with hashes inside end up looking like a huge jumble of text. `awesome_print` can help!
 
-## Demo the awesomeness of this gem!
+> Demo the awesomeness of this gem!
 
 
 ### Ruby Demo
