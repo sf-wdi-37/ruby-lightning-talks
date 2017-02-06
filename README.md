@@ -33,3 +33,23 @@ Even more gems are listed [at an "awesome-ruby" repo](https://github.com/markets
 
 
 > You are welcome to suggest a gem not listed here!
+
+## Part II
+
+Now that you've had more experience investigating gems and technologies for a project, prepare another lightning talk!
+
+You could talk about another gem like devise, a feature of Rails like mailers, or a front-end technology like SASS/SCSS. It should be something we haven't covered as a group.  
+
+Try to tie your talk to something you worked on during your project - maybe:
+
+- something you explored for the project, 
+- something that solves a problem you encountered during the project,
+- something you would want to incorporate into a future version of the project, 
+- or something you're excited to use for a different project that feels more feasible after the last project.
+
+
+Again, write a gist and prepare a demo if possible.  You should aim to answer the following questions:
+
+- What about a previous project inspired you to investigate this topic?
+- What problem does the tool you're describing solve?
+- How do you use it in a rails app?
