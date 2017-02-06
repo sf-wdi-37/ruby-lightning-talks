@@ -48,6 +48,8 @@ Try to tie your talk to something you worked on during your project - maybe:
 - or something you're excited to use for a different project that feels more feasible after the last project.
 
 
+**Once you pick your new topic, sign up a second time in [this google doc](https://docs.google.com/spreadsheets/d/1L-gFsFvXYKqLjJe28th0F98fgQJ3rZ3XwlXTlr7jquc/edit?usp=sharing)**.
+
 Again, write a gist and prepare a demo if possible.  You should aim to answer the following questions:
 
 - What about a previous project inspired you to investigate this topic?
