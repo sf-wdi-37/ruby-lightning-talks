@@ -34,7 +34,7 @@ Even more gems are listed [at an "awesome-ruby" repo](https://github.com/markets
 
 > You are welcome to suggest a gem not listed here!
 
-## Part II
+## Part II - Project-Based Talk
 
 Now that you've had more experience investigating gems and technologies for a project, prepare another lightning talk!
 
