@@ -34,6 +34,7 @@ Even more gems are listed [at an "awesome-ruby" repo](https://github.com/markets
 
 > You are welcome to suggest a gem not listed here!
 
+<!--
 ## Part II - Project-Based Talk
 
 Now that you've had more experience investigating gems and technologies for a project, prepare another lightning talk!
@@ -55,3 +56,4 @@ Again, write a gist and prepare a demo if possible.  You should aim to answer th
 - What about a previous project inspired you to investigate this topic?
 - What problem does the tool you're describing solve?
 - How do you use it in a rails app?
+-->
