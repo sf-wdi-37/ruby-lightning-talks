@@ -1,6 +1,6 @@
 # Ruby on Rails Lightning Talks
 
-Your goal is to create an exceedingly brief presentation of a ruby gem (~5 min). 
+Your goal is to create an exceedingly brief presentation of a ruby gem (~5 min).
 
 
 **Include a live demo or a working code example**. Please also [create a brief github gist](https://help.github.com/articles/creating-gists/) (or "cheat sheet") for your fellow developers, outlining your findings, and linking to any helpful tutorials, resources, hints, and tips you discover in your research. 
@@ -14,7 +14,7 @@ You should aim to answer the following questions:
 
 ## Topic/Gem Ideas
 
-**Once you pick a gem, sign up in [this google doc](https://docs.google.com/spreadsheets/d/1L-gFsFvXYKqLjJe28th0F98fgQJ3rZ3XwlXTlr7jquc/edit?usp=sharing)**.
+**Once you pick a gem, sign up in [this google doc](https://docs.google.com/spreadsheets/d/1gt_i5t22O_vnxHJTvejG_kqq434aaSTg8n5YUwq9kjA/edit?usp=sharing)**.
 
 Here are a few gems you could research: 
 
@@ -33,6 +33,12 @@ Even more gems are listed [at an "awesome-ruby" repo](https://github.com/markets
 
 
 > You are welcome to suggest a gem not listed here!
+
+## Examples
+
+[This lightning talk](https://www.destroyallsoftware.com/talks/wat) does a good job switching between slides and live-coding. We want you to live code! It's funny. You don't need to be funny!
+
+[This one](https://www.youtube.com/watch?v=i4cryg-q_YM) is dense with good information! It's also funny - you don't need to be funny.
 
 <!--
 ## Part II - Project-Based Talk
